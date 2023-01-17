@@ -1,122 +1,15 @@
-def sum(x, y):
-    return x + y
+import sys
 
 
+def sum_two(a, b):
+    return a + b
 
-x = int(input("Введите значение: "))
-y = int(input("Введите значение: "))
 
-print(sum(x, y))
+def main():
+    args = sys.argv[1:]
+    a = int(args[0])
+    b = int(args[1])
+    print(sum_two(a, b))
 
 
-'class'
-
-
-
-
-
-
-
-
-
-
-
-
-'''def sum():
-    x = int(input("Введите значение: "))
-    y = int(input("Введите значение: "))
-    s = x + y
-    return s
-
-
-print(sum())
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main()
