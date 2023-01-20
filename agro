@@ -1,0 +1,38 @@
+class Agro:
+    def __init__(self, typeId):
+        self.typeId = typeId
+
+    def calculate(self):
+        return 0
+
+
+class Livestock(Agro):
+
+    def __init__(self, liveCount, slaughterCount):
+        self.liveCount = liveCount
+        self.slaughterCount = slaughterCount
+
+    def calculate(self):
+        return self.liveCount + self.slaughterCount
+
+
+class Plants(Agro):
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def calculate(self):
+        return self.a * self.b
+
+
+def calc_agro(mAgro: Agro):
+    return mAgro.calculate()
+
+
+def main():
+    print(calc_agro(Livestock(5, 5)))
+    print(calc_agro(Plants(5, 5)))
+
+
+main()
